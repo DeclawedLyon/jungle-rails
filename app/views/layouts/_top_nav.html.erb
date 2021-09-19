@@ -38,10 +38,13 @@
             <li><%= link_to 'Products',  [:admin, :products] %></li>
           </ul>
         </li>
-        <li>
+        <ul class="dropdown">
           <%= link_to cart_path do %>
             <%= fa_icon "shopping-cart" %> My Cart (<%= cart.size %>)
           <% end %>
+        </ul>
+        <li class="nav navbar-nav navbar-right">
+          <%= link_to 'About Us', [:about, :index] %>
         </li>
       </ul>
     </div>
