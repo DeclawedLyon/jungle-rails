@@ -43,6 +43,7 @@
             <%= fa_icon "shopping-cart" %> My Cart (<%= cart.size %>)
           <% end %>
         </ul>
+        <li><%= link_to 'Categories', [:admin, :categories] %></li>
         <li class="nav navbar-nav navbar-right">
           <%= link_to 'About Us', [:about, :index] %>
         </li>
